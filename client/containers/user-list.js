@@ -8,12 +8,15 @@ class UserList extends Component {
     createListItems() {
         return this.props.users.map((user)=> {
             return (
+                <div>
                 <li 
                     key={user.id}
                     onClick={() => this.props.selectUser(user)}
                  > 
            {/* "selectUser" is a function so treat this as a function by adding () =>  */}
                 {user.first} {user.last}</li>
+
+                </div>
             )
         })
     } // now "this.props.users" = the list of users (reducer-users file) as defined in the mapStateToProps function

@@ -65,3 +65,13 @@ li {
   justify-content: space-between;
 }
 
+#add-cool-people{
+margin: 2%;
+}
+#add-button {
+  margin: 2%;
+}
+
+form {
+  margin-left:80%;
+}
